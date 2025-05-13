@@ -6,7 +6,7 @@ const Navbar = async () => {
         <header className="max-w-[70%] m-auto">
             <nav className="flex flex-row mx-auto my-4">
                 <div className="flex items-center justify-between basis-1/3">
-                    <Link href="/">My Portfolio</Link>
+                    <Link href="/">Logo</Link>
                 </div>
                 <div className="flex gap-4 basis-1/3 justify-center">
                     <Link href="/">Home</Link>
@@ -28,13 +28,16 @@ const Navbar = async () => {
                     {/*    </>*/}
                     {/*):(*/}
                         <>
-                            <form action={async () => {
-                                "use server";
-                            }}>
-                                <button type="submit" className={`cursor-pointer`}>
-                                    Login
-                                </button>
-                            </form>
+                            <Link href="/user/login">
+                                <span>
+                                    Sign in
+                                </span>
+                            </Link>
+                            <Link href="/user/register">
+                                <span>
+                                    Sign up
+                                </span>
+                            </Link>
                         </>
                     {/*)}*/}
                 </div>
